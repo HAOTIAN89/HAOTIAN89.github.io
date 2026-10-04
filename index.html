@@ -25,7 +25,7 @@
                 I'm a CS PhD student at <a href="https://polyu.edu.hk/">PolyU</a> <span>&#127469;&#127472;</span> in the <a href="https://www.polyu.edu.hk/comp/">Computing</a> department, where I'm supervised by <a href="https://ninghaohello.github.io/">Prof. Ninghao Liu</a>. My research focuses on enhancing the efficiency of training and deploying advanced LLM-based agents while ensuring robustness, generalization performance, and auditable.
               </p>
               <p>
-                I received the M.S. degree from the School of Computer and Communication Sciences (IC) at <a href="https://www.epfl.ch/en/">EPFL</a> <span>&#127464;&#127469;</span> in March 2026, specializing in Natural Language Processing. Previously, I completed my master thesis at <a href="https://nlp.epfl.ch/">NLP Lab</a>, EPFL, supervised by <a href="https://atcbosselut.github.io/">Prof. Antoine Bosselut</a> and <a href="https://eric11eca.github.io/">Zeming Chen</a>. During my master studies, I was also fortunate to spend time as a semester project student supervised by <a href="https://www.epfl.ch/labs/lia/">Prof. Boi Faltings</a> and <a href="https://shaobo.info/">Shaobo Cui</a>, research assistant in HKUST(GZ) supervised by <a href="https://qcwthu.github.io/">Prof. Chengwei Qin</a>, LLM infrastructure developer intern at the <a href="https://www.icrc.org/en">ICRC</a> supervised by <a href="https://www.linkedin.com/in/anniehartley/">Prof. Mary-Anne (“Annie”) Hartley</a>, and NLP algorithm researcher intern in <a href="https://www.mihoyo.com/en/">miHoYo</a> Luming AI group supervised by <a href="https://scholar.google.com/citations?user=URdBBQUAAAAJ&hl=zh-CN">Yanran Li</a>. I got my bachelor's degree from <a href="http://www.xjtu.edu.cn/">Xi'an Jiaotong University</a> <span>&#127464;&#127475;</span>.
+                I received the M.S. degree from the School of Computer and Communication Sciences (IC) at <a href="https://www.epfl.ch/en/">EPFL</a> <span>&#127464;&#127469;</span> in March 2026, specializing in Natural Language Processing. Previously, I completed my master thesis at <a href="https://nlp.epfl.ch/">NLP Lab</a>, EPFL, supervised by <a href="https://atcbosselut.github.io/">Prof. Antoine Bosselut</a> and <a href="https://eric11eca.github.io/">Zeming Chen</a>. During my master studies, I was also fortunate to spend time as a research student supervised by <a href="https://www.epfl.ch/labs/lia/">Prof. Boi Faltings</a> and <a href="https://shaobo.info/">Shaobo Cui</a>, research assistant in HKUST(GZ) supervised by <a href="https://qcwthu.github.io/">Prof. Chengwei Qin</a>, LLM infrastructure developer intern at the <a href="https://www.icrc.org/en">ICRC</a> supervised by <a href="https://www.linkedin.com/in/anniehartley/">Prof. Mary-Anne Hartley</a>, and NLP algorithm researcher intern in <a href="https://www.mihoyo.com/en/">miHoYo</a> Luming AI group supervised by <a href="https://scholar.google.com/citations?user=URdBBQUAAAAJ&hl=zh-CN">Yanran Li</a>. I got my bachelor's degree from <a href="http://www.xjtu.edu.cn/">Xi'an Jiaotong University</a> <span>&#127464;&#127475;</span>.
               </p>
               <p>
                 For pronunciation, my full name is <a href="https://www.howtopronounce.com/haotian-wu">/how-tee-en woo/</a>, but just calling me Haotian is a lot easier :)
@@ -75,152 +75,108 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-          <tr onmouseout="icl_stop()" onmouseover="icl_start()">
+          <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='icl_image'>
-                  <img src='images/many-shot-icl-teaser.jpeg' width="160"></div>
-                <img src='images/many-shot-icl-teaser.jpeg' width="160">
-              </div>
-              <script type="text/javascript">
-                function icl_start() {
-                  document.getElementById('icl_image').style.opacity = "1";
-                }
-  
-                function icl_stop() {
-                  document.getElementById('icl_image').style.opacity = "0";
-                }
-                icl_stop()
-              </script>
+              <img src="images/NeurIPS2026-CORAL.png" width="160" alt="CORAL">
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2405.19874">
-                <papertitle>Is In-Context Learning Sufficient for Instruction Following in LLMs?</papertitle>
-              </a>
+              <papertitle>Consolidating Reasoning with Test-Time Learning</papertitle>
               <br>
-              <strong>Hao Zhao</strong>, <a href="https://www.andriushchenko.me/">Maksym Andriushchenko</a>, <a href="https://scholar.google.com/citations?user=laq9cq0AAAAJ&hl=en">Francesco Croce</a>, <a href="https://people.epfl.ch/nicolas.flammarion?lang=en">Nicolas Flammarion</a>
+              <strong>Haotian Wu*</strong>, Zeming Chen*, Hao Zhao, Antoine Bosselut
               <br>
-              <em>ICLR 2025, abridged in Workshop AFM@NeurIPS'24</em>
+              <em>NeurIPS 2026</em>
               <br>
-              [<a href="https://arxiv.org/abs/2405.19874">arXiv</a>]
-              [<a href="https://github.com/tml-epfl/icl-alignment">Code</a>]
-              [<a href="https://www.mittrchina.com/news/detail/13848">MIT Tech Review China</a>]
+              [arXiv coming soon]
               <p></p>
               <p>
-                In this work, we show that, while effective, ICL alignment with URIAL (<a href="https://arxiv.org/abs/2312.01552">Lin et al., 2024</a>) still underperforms compared to instruction fine-tuning on the established benchmark MT-Bench, especially with more capable base LLMs, such as GPT-4-Base. We then uncover the most relevant elements for successful in-context alignment, finding the crucial role of the decoding parameters. Based on these insights, we show that the approach of URIAL can indeed be improved by adding high-quality, possibly carefully selected via greedy search, demonstrations in context, getting closer to the performance of instruct models. Finally, we provide the first, to our knowledge, systematic comparison of ICL and instruction fine-tuning (IFT) for instruction following in the low data regime, where ICL can be a viable alternative to IFT.
+                We introduce CORAL, a test-time learning framework that consolidates parallel reasoning trajectories into a lightweight LoRA-based parametric memory before synthesizing a final answer. CORAL is meta-learned through nested optimization to extract complementary reasoning across trajectories rather than treating each solution independently. We also construct OpenParallelThinking, a corpus of 12,810 math problems with trajectories from six LLMs at varying quality levels. Across challenging mathematics and STEM benchmarks, CORAL outperforms strong aggregation baselines by 20% overall and remains robust even when consolidating entirely incorrect solutions.
               </p>
             </td>
           </tr>
           
-          <tr onmouseout="lima_stop()" onmouseover="lima_start()">
+          <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='lima_image'>
-                  <img src='images/long-is-more.png' width="160"></div>
-                <img src='images/long-is-more.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function lima_start() {
-                  document.getElementById('lima_image').style.opacity = "1";
-                }
-  
-                function lima_stop() {
-                  document.getElementById('lima_image').style.opacity = "0";
-                }
-                lima_stop()
-              </script>
+              <img src="images/ACL2026Findings-ICL.png" width="160" alt="Interactive Learning for LLM Reasoning">
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2402.04833">
-                <papertitle>Long Is More for Alignment: A Simple but Tough-to-Beat Baseline for Instruction Fine-Tuning</papertitle>
+              <a href="https://aclanthology.org/2026.findings-acl.303/">
+                <papertitle>Interactive Learning for LLM Reasoning</papertitle>
               </a>
               <br>
-              <strong>Hao Zhao</strong>, <a href="https://www.andriushchenko.me/">Maksym Andriushchenko</a>, <a href="https://scholar.google.com/citations?user=laq9cq0AAAAJ&hl=en">Francesco Croce</a>, <a href="https://people.epfl.ch/nicolas.flammarion?lang=en">Nicolas Flammarion</a>
+              Hehai Lin, Shilei Cao, Sudong Wang, <strong>Haotian Wu</strong>, Minzhi Li, Linyi Yang, Juepeng Zheng, Chengwei Qin
               <br>
-              <em>ICML 2024, abridged in Workshop DMLR@ICLR'24</em>
+              <em>Findings of ACL 2026</em>
               <br>
-              [<a href="https://arxiv.org/abs/2402.04833">arXiv</a>]
-              [<a href="https://huggingface.co/datasets/HuggingFaceH4/OpenHermes-2.5-1k-longest">HuggingFace</a>]
-              [<a href="https://github.com/tml-epfl/long-is-more-for-alignment">Code</a>]
+              [<a href="https://aclanthology.org/2026.findings-acl.303/">Paper</a>]
               <p></p>
               <p>
-                Prior works demonstrate that instruction fine-tuning (IFT) of base LLMs over multi-million-example datasets enables them to fluently interact with human users. We show that filtering via length heuristics is an effective and efficient approach to select instruction tuning data for alignment, and find that fine-tuning on 1K instructions with the longest responses from large-scale IFT datasets, such as Alpaca, outperforms fine-tuning on full datasets. It validates the <a href="https://arxiv.org/abs/2305.11206">Superficial Alignment Hypothesis</a>, which suggests that very few samples are sufficient to teach base LLMs to follow natural language instructions. In addition, we propose to refine pre-selected examples using GPT-4-Turbo, based on its exceptional judging and introspecting capabilities. The resulting dataset, consisting of only 1K instruction-response pairs, yielded competitive results on AlpacaEval 2.0 and MT-Bench compared to complex alignment approaches like RLHF and DPO.
+                We propose ILR, a co-learning framework that uses multi-agent interaction to improve each LLM's independent reasoning ability. Dynamic Interaction adaptively chooses cooperative or competitive strategies according to problem difficulty and model capability, while the Idea3 process enables models to share, analyze, and fuse ideas. Perception Calibration then integrates one model's reward characteristics into another through GRPO. Experiments across mathematical and coding benchmarks show that ILR improves reasoning robustness, outperforms fixed interaction strategies, and scales beyond two-model settings.
               </p>
             </td>
           </tr>
 
 
-          <tr onmouseout="capaboost_stop()" onmouseover="capaboost_start()">
+          <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='capaboost_image'>
-                  <img src='images/CapaBoost.jpeg' width="160"></div>
-                <img src='images/CapaBoost.jpeg' width="160">
-              </div>
-              <script type="text/javascript">
-                function capaboost_start() {
-                  document.getElementById('capaboost_image').style.opacity = "1";
-                }
-  
-                function capaboost_stop() {
-                  document.getElementById('capaboost_image').style.opacity = "0";
-                }
-                capaboost_stop()
-              </script>
+              <img src="images/CVPR2026-ACEMerging.png" width="160" alt="ACE-Merging">
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://openreview.net/forum?id=H3IUunLy8s">
-                <papertitle>Increasing Model Capacity for Free: A Simple Strategy for Parameter Efficient Fine-tuning
-                </papertitle>
+              <a href="https://arxiv.org/abs/2603.02945">
+                <papertitle>ACE-Merging: Data-Free Model Merging with Adaptive Covariance Estimation</papertitle>
               </a>
               <br>
-              Haobo Song*, <strong>Hao Zhao*</strong>, Soumajit Majumder, <a href="https://tlin-taolin.github.io/">Tao Lin</a>
+              Bo Xu, <strong>Haotian Wu</strong>, Hehai Lin, Weiquan Huang, Beier Zhu, Yao Shu, Chengwei Qin
               <br>
-              <em>ICLR 2024</em>
+              <em>CVPR 2026</em>
               <br>
-              <!-- <em>Links:</em> -->
-              [<a href="https://arxiv.org/abs/2407.01320">arXiv</a>]
-              [<a href="https://github.com/LINs-lab/CapaBoost">Code</a>]
+              [<a href="https://arxiv.org/abs/2603.02945">arXiv</a>]
               <p></p>
               <p>
-                The core idea of Parameter-Efficient Fine-Tuning (PEFT) methods, such as LoRA, is to model the incremental update of pre-trained weights (&Delta;W) through low-rank weight approximations, <i>BA</i>, where <i>A</i> and <i>B</i> are trainable weight matrices. While the compact dimensions of <i>A</i> and <i>B</i> offer notable parameter efficiency benefits, they also impose significant constraints on model capacity due to the inherent low-rank nature of their product. In this work, we propose CapaBoost, an effective plug-and-play approach, improving the performance of mainstream PEFT methods without increasing trainable parameters. By applying static random masks to the shared weight matrix, CapaBoost constructs a diverse set of weight matrices placed in parallel, effectively increasing the rank of incremental weights without adding new parameters. We extensively validate the efficacy of CapaBoost through experiments on various downstream tasks, including natural language understanding, question answering, and image classification.
+                We present ACE-Merging, a data-free model merging framework based on adaptive covariance estimation. Our analysis shows that the task-specific input covariance required for optimal merging can be inferred directly from differences between fine-tuned model parameters, eliminating the need for training data, retraining, or architectural changes. This insight yields an efficient closed-form solution that mitigates interference among task experts. Experiments on vision and language benchmarks establish new state-of-the-art data-free merging performance, including a four-point average improvement over prior methods across seven GPT-2 tasks.
               </p>
             </td>
           </tr>
 
 
-          <tr onmouseout="ttab_stop()" onmouseover="ttab_start()">
+          <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='ttab_image'>
-                  <img src='images/ttab.jpg' width="160"></div>
-                <img src='images/ttab.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function ttab_start() {
-                  document.getElementById('ttab_image').style.opacity = "1";
-                }
-  
-                function ttab_stop() {
-                  document.getElementById('ttab_image').style.opacity = "0";
-                }
-                ttab_stop()
-              </script>
+              <img src="images/Arxiv-FURINA.png" width="160" alt="FURINA">
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2306.03536">
-                <papertitle>On Pitfalls of Test-Time Adaptation</papertitle>
+              <a href="https://arxiv.org/abs/2510.06800">
+                <papertitle>FURINA: A Fully Customizable Role-Playing Benchmark via Scalable Multi-Agent Collaboration Pipeline</papertitle>
               </a>
               <br>
-              <strong>Hao Zhao*</strong>, <a href="https://sites.google.com/view/yuejiangliu/home">Yuejiang Liu*</a>, <a href="https://people.epfl.ch/alexandre.alahi?lang=en">Alexandre Alahi</a>, <a href="https://tlin-taolin.github.io/">Tao Lin</a>
+              <strong>Haotian Wu*</strong>, Shufan Jiang*, Chios Chen, Yiyang Feng, Hehai Lin, Heqing Zou, Yao Shu, Chengwei Qin
               <br>
-              <em>ICML 2023, abridged in Workshop DG@ICLR'23 <strong>(Spotlight)</strong></em>
+              <em>arXiv preprint</em>
               <br>
-              [<a href="https://arxiv.org/abs/2306.03536">arXiv</a>]
-              [<a href="https://github.com/LINs-lab/ttab">Code</a>]
+              [<a href="https://arxiv.org/abs/2510.06800">arXiv</a>]
               <p></p>
               <p>
-                Test-Time Adaptation (TTA) has recently emerged as a promising approach for tackling the robustness challenge under distribution shifts. We present TTAB, a TTA benchmark that captures a wide spectrum of realistic settings, encompassing ten state-of-the-art algorithms, a diverse array of distribution shifts, and two evaluation protocols. With this benchmark, we conduct rigorous and holistic evaluations of how existing TTA algorithms perform on a broad set of models and distribution shifts, revealing three primary pitfalls that challenge the feasibility and effectiveness of current unsupervised learning paradigms in more realistic situations.
+                We introduce FURINA-Builder, a scalable multi-agent pipeline for constructing fully customizable role-playing benchmarks across arbitrary characters, scenarios, and prompt formats. Using this pipeline, we create FURINA-Bench with established and synthesized characters and fine-grained, dimension-specific evaluation criteria. Evaluations of leading LLMs reveal that established characters remain easier than synthesized ones, model scale does not monotonically reduce hallucinations, and stronger reasoning introduces a trade-off: it improves role-playing quality while increasing role-playing hallucinations, forming a broader performance-reliability Pareto frontier.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/ACL24Workshop-MEDISCHARGE%20.png" width="160" alt="MEDISCHARGE">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://aclanthology.org/2024.bionlp-1.61/">
+                <papertitle>EPFL-MAKE at "Discharge Me!": An LLM System for Automatically Generating Discharge Summaries of Clinical Electronic Health Record</papertitle>
+              </a>
+              <br>
+              <strong>Haotian Wu</strong>, Paul Boulenger, Antonin Faure, Berta Céspedes, Farouk Boukil, Nastasia Morel, Zeming Chen, Antoine Bosselut
+              <br>
+              <em>ACL 2024 Workshop on Biomedical Natural Language Processing</em>
+              <br>
+              [<a href="https://aclanthology.org/2024.bionlp-1.61/">Paper</a>]
+              [<a href="https://github.com/HAOTIAN89/MEDISCHARGE">Code</a>]
+              <p></p>
+              <p>
+                We present MEDISCHARGE, a Meditron-7B-based system for generating Brief Hospital Course and Discharge Instruction summaries from clinical electronic health records. The system extends the model's context window from 2K to 6K tokens and dynamically selects the most informative record sections when inputs remain too long. MEDISCHARGE improves the shared-task baseline by 183%, achieves a 0.444 ROUGE-1 score, and places second in the competition, demonstrating that domain-specific LLMs and importance-aware information selection can produce accurate discharge documentation efficiently.
               </p>
             </td>
           </tr>
@@ -241,6 +197,16 @@
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
         <tr>
         <td style="padding:20px;width:100%;vertical-align:middle">
+          <heading>Internship</heading>
+          <p> [2024.8 - 2025.4] NLP Algorithm Researcher, <a href="https://www.mihoyo.com/en/">miHoYo</a>, Beijing, China </p>
+          <p> [2024.1 - 2024.8] LLM Infrastructure Developer, <a href="https://www.icrc.org/en">ICRC</a>, Geneva, Switzerland </p>
+        </td>
+      </tr>
+      </tbody></table>
+
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr>
+        <td style="padding:20px;width:100%;vertical-align:middle">
           <heading>Review Service</heading>
           <p> Conferences: <a href="https://iclr.cc/">ICLR'27</a>  </p>
         </td>
@@ -251,7 +217,8 @@
         <tr>
         <td style="padding:20px;width:100%;vertical-align:middle">
           <heading>Miscellanea</heading>
-          <p> When I'm not working, I enjoy skiing &#127947;, hiking &#127939;, riding the bike &#127946;, and cooking. </p>
+          <p> When I'm not working, I enjoy skiing ⛷️, hiking 🥾, cycling 🚴, and cooking 🍳. </p>
+          <p> I also enjoy playing FPS games!! </p>
         </td>
       </tr>
       </tbody></table>
